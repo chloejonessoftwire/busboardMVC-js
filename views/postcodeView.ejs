@@ -1,0 +1,30 @@
+<!-- views/testView.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--  <link rel="stylesheet" href="mystyle.css"> --> 
+	<meta charset="utf-8">
+	<title>BusBoard: Postcode</title>
+	
+</head>
+
+<body id="home">
+	<h1>BusBoard  </h1>
+	<h2> Live Bus Depature Times for Postcode: <%= postcode %></h2>
+	<h4> by Chloe Jones</h4>
+	<ul>
+		<%
+			busArray.forEach((bus) => { %>
+			<li><b><%= bus.showBuses() %></b></li>
+			
+		<% });
+		%>
+	</ul>
+	
+
+	</body>
+	</html>
+
+</body>
+</html>

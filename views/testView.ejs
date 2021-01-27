@@ -4,17 +4,24 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Example title</title>
+	<title>BusBoard</title>
+	
 </head>
 
 <body id="home">
-	<h1>MVC example</h1>
+	<h1>BusBoard</h1>
+	<h2> Live Bus Depature Times</h2>
+	<h4> by Chloe Jones</h4>
 	<ul>
 		<%
-			data.forEach((person) => { %>
-			<li><b><%= person.showTestData() %></b></li>
+			busArray.forEach((item) => { %>
+			<li><b><%= item.showBuses() %></b></li>
+			
 		<% });
 		%>
 	</ul>
+	</body>
+	</html>
+
 </body>
 </html>
